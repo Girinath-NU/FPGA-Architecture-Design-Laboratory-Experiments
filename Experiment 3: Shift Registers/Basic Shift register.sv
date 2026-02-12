@@ -7,7 +7,7 @@ output logic [3:0] data out // Parallel data output
 );
 always_ff @(posedge clk or negedge reset_n) begin
   if (!reset n) begin // Reset the register to all zeros
-      data out <= 4'60000;
+      data out <= 4'0000;
   end
 end
   else if (shift en) begin // Shift operation: new bit enters from right, leftmost bit is discarded
